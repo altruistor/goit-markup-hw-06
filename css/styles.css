@@ -1,0 +1,138 @@
+:root {
+    --color-primary: #434455;
+    --color-hero-button: #fff;
+    --color-hero-button-bg: #4D5AE5;
+    --color-navy-blue: #2E2F42;
+
+}
+
+
+body {
+    color: var(--color-primary);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    
+
+
+}
+
+ a {
+    /* font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2E2F42; */
+    text-decoration-line: none;
+
+
+} 
+
+
+
+/* address {
+    color: var(--color-primary);
+    
+text-decoration: none;
+font-style: normal;
+}
+address:hover {
+    color: var(--color-hero-button-bg);
+} */
+
+
+.header-nav-link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2E2F42;
+    text-decoration-line: none;
+    font-style: normal;
+    
+
+}
+.header-nav-link:hover {
+    color: var(--color-hero-button-bg);
+}
+ul {
+    list-style-type: none;
+  }
+
+
+h1 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--color-hero-button);
+}
+
+.hero {
+   /* width: 1440px;
+   height: 600px;
+   top: 72px; */
+    background-color: #2E2F42;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    color: var(--color-navy-blue);
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.hero-button {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-hero-button);
+    background-color: var(--color-hero-button-bg);
+    cursor: pointer;
+    border: 4px;
+    width: 169px;
+    height: 56px;
+}
+
+.our-team {
+    background-color: #F4F4FD
+    ;
+}
+
+footer {
+    background-color: #2E2F42;
+    color: #fff;
+}
+
+
+
+.filter-button {
+    background-color: #E7E9FC;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #404BBF
+    font-size: 16px;
+    line-height: 1.5;
+    width: 68px;
+    height: 24px;
+
+
+
+}
+
+.filter-button:hover {
+    background-color: #404BBF;
+    color: #fff;
+    cursor: pointer;
+}
