@@ -2,7 +2,11 @@
     --color-primary: #434455;
     --color-hero-button: #fff;
     --color-hero-button-bg: #4D5AE5;
-    --color-navy-blue: #2E2F42;
+    --color-secondary: #2E2F42;
+    --color-hero-hover: #404BBF;
+    --color-card-bg: #F4F4FD;
+    --color-filter-bg: #E7E9FC;
+
 
 }
 
@@ -10,45 +14,23 @@
 body {
     color: var(--color-primary);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
     text-decoration: none;
-    
-
-
 }
 
  a {
-    /* font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #2E2F42; */
+    
     text-decoration-line: none;
 
 
 } 
 
-
-
-/* address {
-    color: var(--color-primary);
-    
-text-decoration: none;
-font-style: normal;
-}
-address:hover {
-    color: var(--color-hero-button-bg);
-} */
-
-
 .header-nav-link {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
+    letter-spacing: 2%;
     line-height: 1.5;
-    color: #2E2F42;
+    color: var(--color-secondary);
     text-decoration-line: none;
     font-style: normal;
     
@@ -57,82 +39,148 @@ address:hover {
 .header-nav-link:hover {
     color: var(--color-hero-button-bg);
 }
+
+.header-contacts {
+    font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        line-height: 1.5;
+        color: var(--color-secondary);
+        text-decoration-line: none;
+        font-style: normal;
+}
+
+.header-contacts:hover {
+    color: var(--color-hero-button-bg);
+}
+
+
 ul {
     list-style-type: none;
   }
 
 
-h1 {
-    font-family: 'Roboto';
+.hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 2%;
     color: var(--color-hero-button);
 }
 
 .hero {
-   /* width: 1440px;
-   height: 600px;
-   top: 72px; */
-    background-color: #2E2F42;
+
+    background-color: var(--color-secondary);
 }
 
-h2 {
-    font-family: 'Roboto';
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    color: var(--color-navy-blue);
+
+
+.section-title {
+    
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        color: var(--color-secondary);
+        letter-spacing: 0.32;
+
 }
 
-h3 {
-    font-family: 'Roboto';
+
+
+.section-card-title {
+
     font-weight: 500;
     line-height: 1.2;
     font-size: 20px;
+    letter-spacing: 0.32;
 }
 
 .hero-button {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     color: var(--color-hero-button);
     background-color: var(--color-hero-button-bg);
     cursor: pointer;
-    border: 4px;
-    width: 169px;
-    height: 56px;
+    letter-spacing: 0.64px;
+}
+
+.hero-button:hover {
+    background-color: var(--color-hero-hover);
 }
 
 .our-team {
-    background-color: #F4F4FD
+    background-color: var(--color-card-bg)
     ;
 }
 
-footer {
-    background-color: #2E2F42;
-    color: #fff;
+.skills-text {
+    letter-spacing: 0.32px;
+    line-height: 1.5;
 }
 
 
 
+footer {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.footer-text {
+    line-height: 1.5;
+    letter-spacing: 0.32;
+}
+
+.section-card-background {
+    background-color: #fff;
+}
+
+.our-team-text {
+    line-height: 1.5;
+    letter-spacing: 0.32;
+}
+
 .filter-button {
-    background-color: #E7E9FC;
+    background-color: var(--color-card-bgcard-bg);
     font-family: 'Roboto';
     font-weight: 500;
-    color: #404BBF
+    color: var(--color-hero-hover);
     font-size: 16px;
     line-height: 1.5;
-    width: 68px;
-    height: 24px;
-
-
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    border: solid var(--color-filter-bg);
 
 }
 
 .filter-button:hover {
-    background-color: #404BBF;
+    background-color: var(--color-hero-hover);
     color: #fff;
     cursor: pointer;
+}
+
+.portfolio-card-bg {
+    background-color: #fff;
+    border: 1px solid var(--color-filter-bg);
+}
+
+.logo-text {
+    font-family: 'Raleway', san-serif;
+    font-weight: 800;
+    font-style: 18px;
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
