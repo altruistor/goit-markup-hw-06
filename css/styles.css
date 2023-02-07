@@ -25,10 +25,11 @@ body {
 
 } 
 
+
 .header-nav-link {
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     line-height: 1.5;
     color: var(--color-secondary);
     text-decoration-line: none;
@@ -43,7 +44,7 @@ body {
 .header-contacts {
     font-weight: 400;
         font-size: 16px;
-        letter-spacing: 0.32px;
+        letter-spacing: 0.02em;
         line-height: 1.5;
         color: var(--color-secondary);
         text-decoration-line: none;
@@ -64,7 +65,7 @@ ul {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: var(--color-hero-button);
 }
 
@@ -81,18 +82,18 @@ ul {
         font-weight: 700;
         line-height: 1.11;
         color: var(--color-secondary);
-        letter-spacing: 0.32;
+        letter-spacing: 0.02em;
 
 }
 
 
 
 .section-card-title {
-
+color: var(--color-secondary);
     font-weight: 500;
     line-height: 1.2;
     font-size: 20px;
-    letter-spacing: 0.32;
+    letter-spacing: 0.02em;
 }
 
 .hero-button {
@@ -103,10 +104,11 @@ ul {
     color: var(--color-hero-button);
     background-color: var(--color-hero-button-bg);
     cursor: pointer;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
 }
 
-.hero-button:hover {
+.hero-button:hover
+.hero-button:focus {
     background-color: var(--color-hero-hover);
 }
 
@@ -116,7 +118,7 @@ ul {
 }
 
 .skills-text {
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     line-height: 1.5;
 }
 
@@ -124,53 +126,71 @@ ul {
 
 footer {
     background-color: var(--color-secondary);
-    color: #fff;
+    color: var(--color-hero-button);
 }
 
 .footer-text {
     line-height: 1.5;
-    letter-spacing: 0.32;
+    letter-spacing: 0.02em;
 }
 
 .section-card-background {
-    background-color: #fff;
+    background-color: var(--color-hero-button);
 }
 
 .our-team-text {
     line-height: 1.5;
-    letter-spacing: 0.32;
+    letter-spacing: 0.02em;
 }
 
 .filter-button {
-    background-color: var(--color-card-bgcard-bg);
-    font-family: 'Roboto';
+    background-color: var(--color-card-bg);
+    font-family: 'Roboto' sans-serif;
     font-weight: 500;
     color: var(--color-hero-hover);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
     border-radius: 4px;
-    border: solid var(--color-filter-bg);
-
+    border: 1px solid var(--color-filter-bg);
+cursor: pointer;
 }
 
-.filter-button:hover {
+.filter-button:hover
+ {
     background-color: var(--color-hero-hover);
-    color: #fff;
-    cursor: pointer;
+    color: var(--color-hero-button);
+    
+}
+
+.filter-button:focus {
+    background-color: var(--color-hero-hover);
 }
 
 .portfolio-card-bg {
-    background-color: #fff;
-    border: 1px solid var(--color-filter-bg);
+    background-color: var(--color-hero-button);
+   
 }
 
 .logo-text {
     font-family: 'Raleway', san-serif;
     font-weight: 800;
-    font-style: 18px;
+    font-size: 18px;
     text-transform: uppercase;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    color: var(--color-secondary);
 }
+
+.logo-color-dark {
+    color: var(--color-hero-button-bg);
+}
+
+.logo-color-light {
+    color: var(--color-card-bg);
+}
+
+.logo-color-
 
 .visually-hidden {
     position: absolute;
