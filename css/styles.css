@@ -10,21 +10,79 @@
 
 }
 
+/* Basic */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+.container{
+    width: 100%;
+        max-width: 1158px;
+        /* margin: 0 auto;  */
+        padding: 0 15px;
+    margin-right: auto;
+        margin-left: auto;
+}
+
+
+
 
 body {
     color: var(--color-primary);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background: var(--color-hero-button);
+    margin: auto;
 }
 
  a {
     
     text-decoration-line: none;
-
-
 } 
 
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+}
+
+
+
+
+/* Logo */
+
+.logo-text {
+    font-family: 'Raleway', san-serif;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    color: var(--color-secondary);
+}
+
+.logo-color-dark {
+    color: var(--color-hero-button-bg);
+}
+
+.logo-color-light {
+    color: var(--color-card-bg);
+}
+
+
+/* Header */
 
 .header-nav-link {
     font-weight: 500;
@@ -55,10 +113,30 @@ body {
     color: var(--color-hero-button-bg);
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    
+}
 
-ul {
-    list-style-type: none;
-  }
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 24px 0;
+    margin-left: 76px;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-address-list {
+    display: flex;
+    gap: 40px;
+}
+/* Hero */
 
 
 .hero-title {
@@ -67,33 +145,17 @@ ul {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--color-hero-button);
+    max-width: 498px;
+    
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .hero {
 
     background-color: var(--color-secondary);
-}
-
-
-
-.section-title {
-    
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        color: var(--color-secondary);
-        letter-spacing: 0.02em;
-
-}
-
-
-
-.section-card-title {
-color: var(--color-secondary);
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: 20px;
-    letter-spacing: 0.02em;
+    padding: 188px 0;
+    text-align: center;
 }
 
 .hero-button {
@@ -105,33 +167,111 @@ color: var(--color-secondary);
     background-color: var(--color-hero-button-bg);
     cursor: pointer;
     letter-spacing: 0.04em;
+    padding: 16px 32px;
+    border: 1px solid var(--color-hero-button-bg);
+    border-radius: 4px;
+ 
 }
 
-.hero-button:hover, .hero-button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: var(--color-hero-hover);
 }
+
+
+
+
+
+/* Legend */
+
+.legend-item-list {
+    padding: 120px 0;
+    gap: 24px;
+    justify-content: center;
+
+}
+
+.legend-item-container {
+    display: flex;
+    
+}
+
+.section-title {
+    
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        color: var(--color-secondary);
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin-bottom: 72px;
+}
+
+.target-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.target-list {
+    margin-bottom: 120px;
+}
+
+.section-card-title {
+color: var(--color-secondary);
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+   
+}
+
+
 
 .our-team {
     background-color: var(--color-card-bg)
     ;
 }
 
+.our-team-container {
+    padding: 120px 156px;
+    
+}
+
+
+.team-cards-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    
+}
+
+.team-card-text {
+    padding: 16px 32px;
+    text-align: center;
+}
+
+.team-card-img {
+    margin-bottom: ;
+}
+
 .skills-text {
     letter-spacing: 0.02em;
     line-height: 1.5;
+    margin-top: 8px;
+}
+
+.section-title-team {
+    margin-top: 120px;
+}
+
+.team-card {
+    text-align: center;
+    
 }
 
 
 
-footer {
-    background-color: var(--color-secondary);
-    color: var(--color-hero-button);
-}
-
-.footer-text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
 
 .section-card-background {
     background-color: var(--color-hero-button);
@@ -169,25 +309,36 @@ cursor: pointer;
    
 }
 
-.logo-text {
-    font-family: 'Raleway', san-serif;
-    font-weight: 800;
-    font-size: 18px;
-    text-transform: uppercase;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    color: var(--color-secondary);
+.container-footer {
+    background-color: var(--color-secondary);
 }
 
-.logo-color-dark {
-    color: var(--color-hero-button-bg);
+/* Footer */
+
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-hero-button);
 }
 
-.logo-color-light {
-    color: var(--color-card-bg);
+.footer-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+}
+.footer-container {
+    
+    background-color: var(--color-secondary);width: 100%;
+        max-width: 1158px;
+        /* margin: 0 auto;  */
+        padding: 0 15px;
+        margin-right: auto;
+        margin-left: auto;
+    padding: 100px 0;
 }
 
-
+.footer.logo {
+    margin-bottom: 16px;
+}
 
 .visually-hidden {
     position: absolute;
