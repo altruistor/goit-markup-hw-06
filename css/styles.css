@@ -20,6 +20,7 @@ h4,
 h5,
 h6 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .container{
@@ -84,6 +85,10 @@ img {
 
 /* Header */
 
+.top-menu {
+    border-bottom: 1px solid var(--color-filter-bg);
+}
+
 .header-nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -92,6 +97,8 @@ img {
     color: var(--color-secondary);
     text-decoration-line: none;
     font-style: normal;
+    padding-top: 24px;
+        padding-bottom: 24px;
     
 
 }
@@ -107,6 +114,9 @@ img {
         color: var(--color-secondary);
         text-decoration-line: none;
         font-style: normal;
+        padding-top: 24px;
+            padding-bottom: 24px;
+            display: block;
 }
 
 .header-contacts:hover, .header-contacts:focus {
@@ -122,8 +132,6 @@ img {
 .header-nav {
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    padding: 24px 0;
     margin-left: 76px;
 }
 
@@ -133,8 +141,13 @@ img {
 }
 
 .header-address-list {
+    margin-left: auto;
+}
+
+.header-address-list-items {
     display: flex;
     gap: 40px;
+
 }
 /* Hero */
 
@@ -149,6 +162,7 @@ img {
     
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 48px;
 }
 
 .hero {
@@ -184,15 +198,20 @@ img {
 
 /* Legend */
 
+
+
+
 .legend-item-list {
     padding: 120px 0;
-    gap: 24px;
-    justify-content: center;
+    justify-content: space-between;
+        
+       
 
 }
 
 .legend-item-container {
     display: flex;
+    gap: 24px;
     
 }
 
@@ -207,10 +226,10 @@ img {
         margin-bottom: 72px;
 }
 
-.target-list {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
+.target-list-img {
+   display: flex;
+   justify-content: center;
+   gap: 24px;
 }
 
 .target-list {
@@ -223,18 +242,17 @@ color: var(--color-secondary);
     line-height: 1.2;
     font-size: 20px;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
    
 }
 
 
 
-.our-team {
-    background-color: var(--color-card-bg)
-    ;
-}
+
 
 .our-team-container {
     padding: 120px 156px;
+    background-color: var(--color-card-bg);
     
 }
 
@@ -247,7 +265,7 @@ color: var(--color-secondary);
 }
 
 .team-card-text {
-    padding: 16px 32px;
+    padding: 32px 16px;
     text-align: center;
 }
 
@@ -255,10 +273,12 @@ color: var(--color-secondary);
     margin-bottom: ;
 }
 
+
+
 .skills-text {
     letter-spacing: 0.02em;
     line-height: 1.5;
-    margin-top: 8px;
+    
 }
 
 .section-title-team {
@@ -273,14 +293,30 @@ color: var(--color-secondary);
 
 
 
-.section-card-background {
+.section-card-box {
     background-color: var(--color-hero-button);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-primary);
+}
+
+/* Portfolio */
+
+.portfolio-container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
 }
 
 .filter-button {
@@ -294,6 +330,7 @@ color: var(--color-secondary);
     border-radius: 4px;
     border: 1px solid var(--color-filter-bg);
 cursor: pointer;
+padding: 12px 24px;
 }
 
 .filter-button:hover, .filter-button:focus
@@ -306,11 +343,28 @@ cursor: pointer;
 
 .portfolio-card-bg {
     background-color: var(--color-hero-button);
+    max-width: 360px;
+    margin: 0;
+        padding: 0;
    
 }
 
 .container-footer {
     background-color: var(--color-secondary);
+}
+
+.portfolio-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+
+}
+
+.portfolio-card-text {
+    padding: 36px 16px;
+    border-right: 1px solid var(--color-filter-bg);
+    border-left: 1px solid var(--color-filter-bg);
+    border-bottom: 1px solid var(--color-filter-bg);
 }
 
 /* Footer */
@@ -327,16 +381,11 @@ footer {
 }
 .footer-container {
     
-    background-color: var(--color-secondary);width: 100%;
-        max-width: 1158px;
-        /* margin: 0 auto;  */
-        padding: 0 15px;
-        margin-right: auto;
-        margin-left: auto;
-    padding: 100px 0;
+    background-color: var(--color-secondary);
+    padding: 156px 100px;
 }
 
-.footer.logo {
+.footer-logo {
     margin-bottom: 16px;
 }
 
