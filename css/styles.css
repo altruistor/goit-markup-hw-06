@@ -237,9 +237,9 @@ img {
     flex-basis: calc(100% / (4-24px));
 }
 
-/* .target-list {
-    margin-bottom: 120px;
-} */
+.target-list {
+    padding-bottom: 120px;
+}
 
 .section-card-title {
 color: var(--color-secondary);
