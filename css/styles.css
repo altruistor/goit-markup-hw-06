@@ -88,7 +88,11 @@ img {
 /* Header */
 
 .top-menu {
-    border-bottom: 1px solid var(--color-filter-bg);
+    background: #FFFFFF;
+
+
+border-bottom: 1px solid #E7E9FC;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav-link {
@@ -179,6 +183,9 @@ img {
         background-position: center;
         background-size: cover;
         background-color: var(--color-secondary);
+        max-width: 1440px;
+        margin: 0 auto;
+
         
        
 }
@@ -193,8 +200,10 @@ img {
     cursor: pointer;
     letter-spacing: 0.04em;
     padding: 16px 32px;
-    border: 1px solid var(--color-hero-button-bg);
-    border-radius: 4px;
+    background: var(--color-hero-button-bg);
+border: 1px solid var(--color-hero-button-bg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
  
 }
 
@@ -307,10 +316,11 @@ color: var(--color-secondary);
 }
 
 .our-team-text {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
     letter-spacing: 0.02em;
 }
 
@@ -363,7 +373,8 @@ color: var(--color-secondary);
         background-color: var(--color-hero-button-bg);
 }
 
-.social-icons-link:hover {
+.social-icons-link:hover,
+.social-icons-link:focus {
     
         background-color: var(--color-hero-hover);
 }
@@ -402,7 +413,8 @@ width: 24px;
     
 }
 
-.footer-social-icons-link:hover {
+.footer-social-icons-link:hover, 
+.footer-social-icons-link:focus {
     background-color: var(--color-success);
 }
 
@@ -437,14 +449,16 @@ width: 24px;
     
 }
 
- .customers-icon-link:hover 
+ .customers-icon-link:hover,
+ .customers-icon-link:focus 
  {
-    border: 1px solid var(--color-hero-hover);
-        border-radius: 4px;
+    border-color: var(--color-hero-hover);
+        
       
 }
 
-.customers-icon-link:hover .customers-list-icon{
+.customers-icon-link:hover .customers-list-icon,
+.customers-icon-link:focus .customers-list-icon{
     fill: var(--color-hero-hover);
 }
 
@@ -488,11 +502,14 @@ cursor: pointer;
 padding: 12px 24px;
 }
 
-.filter-button:hover, .filter-button:focus
+.filter-button:hover, 
+.filter-button:focus
  {
     background-color: var(--color-hero-hover);
     color: var(--color-hero-button);
     border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
     
 }
 
@@ -505,11 +522,12 @@ padding: 12px 24px;
    
 }
 
-.portfolio-card-bg:hover {
-    
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-   
+.portfolio-card-link:hover .portfolio-card-text,
+.portfolio-card-link:focus .portfolio-card-text {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
 
 .container-footer {
     background-color: var(--color-secondary);
