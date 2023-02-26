@@ -62,7 +62,9 @@ img {
     display: block;
 }
 
-
+button {
+    cursor: pointer;
+  }
 
 
 /* Logo */
@@ -495,7 +497,7 @@ width: 24px;
     fill: var(--color-subtle-text);
     transition-property: fill;
     transition-duration: 250ms;
-    
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  
@@ -554,7 +556,7 @@ width: 24px;
     border: 1px solid var(--color-filter-bg);
 cursor: pointer;
 padding: 12px 24px;
-transition-property: background-color color border-color box-shadow;
+transition-property: background-color, color, border-color, box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -576,7 +578,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
 }
 
-.portfolio-card-bg:hover .portfolio-card-overlay-text {
+.portfolio-card-link:hover .portfolio-card-overlay-text,
+.portfolio-card-link:focus .portfolio-card-overlay-text {
     transform: translateY(0);
 }
 
@@ -600,7 +603,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.portfolio-card-bg {
+/* .portfolio-card-bg {
+    
+    
+   
+} */
+
+.portfolio-card-link {
     background-color: var(--color-hero-button);
     max-width: 360px;
     margin: 0;
@@ -609,14 +618,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-   
 }
 
 
-
-.portfolio-card-bg:hover .portfolio-card-text,
-.portfolio-card-bg:focus .portfolio-card-text {
+.portfolio-card-link:hover .portfolio-card-text,
+.portfolio-card-link:focus .portfolio-card-text {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     
 }
@@ -737,10 +743,10 @@ footer {
 .close-button-icon {
     width: 8px;
     height: 8px;
-    fill: #434455;
-    /* transition-property: fill;
+    fill: #000;
+    transition: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-close  {
@@ -760,14 +766,15 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover, .close-button-icon,
-.modal-close:focus, .close-button-icon  {
+.modal-close:hover, 
+.modal-close:focus  {
     background-color: var(--color-hero-hover);
     
 } 
 
-.modal-close, .close-button-icon:hover {
-    fill: #fff;
+.modal-close:hover, .close-button-icon
+.modal-close:focus, .close-button-icon {
     
+    fill: #fff;  
 } 
 
