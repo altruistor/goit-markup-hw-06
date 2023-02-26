@@ -737,13 +737,13 @@ footer {
 .close-button-icon {
     width: 8px;
     height: 8px;
-    fill: #000;
+    fill: #434455;
     /* transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.modal-close {
+.modal-close  {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -760,13 +760,13 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover, 
-.modal-close:focus  {
+.modal-close:hover, .close-button-icon,
+.modal-close:focus, .close-button-icon  {
     background-color: var(--color-hero-hover);
     
 } 
 
-.modal-close:hover, .close-button-icon  {
+.modal-close, .close-button-icon:hover {
     fill: #fff;
     
 } 
