@@ -512,7 +512,8 @@ width: 24px;
         height: 100%;
         border: 1px solid var(--color-subtle-text);
         border-radius: 4px;
-        transition-property: border-color;
+
+        transition-property: border-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -521,11 +522,12 @@ width: 24px;
  .customers-icon-link:focus 
  {
     border-color: var(--color-hero-hover);
+
         
       
 }
 
-.customers-icon-link:hover .customers-list-icon
+.customers-icon-link:hover .customers-list-icon,
 .customers-icon-link:focus .customers-list-icon {
     fill: var(--color-hero-hover);
 
