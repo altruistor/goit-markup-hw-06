@@ -340,6 +340,23 @@
             </li>
           </ul>
         </li>
+        <li class="footer-subscribe">
+          <p class="footer-social-header">Subscribe</p>
+          <ul class="footer-subscribe-email-button">
+            <li class="">
+              <form class="footer-subscribe-email-form" type="" autocomplete="on" novalidate><input
+                  class="footer-subscribe-email-form-input" type="text" name="user-email-subscribe"
+                  placeholder="E-mail">
+              </form>
+            <li class=""><button class="subscribe-submit-button" type="submit">Subscribe <svg class="subscribe-icon"
+                  height="24px" width="24px">
+                  <use href="./images/icons-forma.svg#icon-letter-subscribe"></use>
+                </svg></button>
+            </li>
+        </li>
+        <li class=""></li>
+      </ul>
+      </li>
       </ul>
     </div>
   </footer>
@@ -352,34 +369,50 @@
 
       <div class="modal-window-container">
         <p class="modal-window-header">Leave your contacts and we will call you back</p>
-        <form name="contact-form" autocomplete="on" novalidate>
-          <ul>
-            <li>
-              <label for="user-name">Name</label>
-              <input type="text" id="user-name" name="user-name" />
-            </li>
-            <li>
-              <label for="user-phone">Phone</label>
-              <input type="text" id="user-phone" name="user-phone" />
-            </li>
-            <li>
-              <label for="user-mail">Email</label>
-              <input type="text" id="user-mail" name="user-mail" />
-            </li>
-            <li>
-              <label for="user-msg">Comment</label>
-              <textarea class="modal-msg-texarea" id="user-msg" name="user-msg" resize="none"
-                placeholder="Text input"></textarea> </textarea>
-            </li>
+        <form class="contact-form" autocomplete="on" novalidate>
+
+          <label class="modal-form-label">
+            <span class="modal-form-label-text"> Name</span><span class="form-input-wrapper"><input
+                class="modal-form-input" type="text" name="user-name" pattern="[a-zA-Zа-яА-ЯіІїЇ]+" required>
+              <svg class="modal-form-icon-input" wight="18px" height="18px">
+                <use href="./images/icons-forma.svg#icon-person-black-18dp-1"></use>
+              </svg></span></label>
+
+          <label class="modal-form-label">
+            <span class="modal-form-label-text">Phone</span><span class="form-input-wrapper"><input
+                class="modal-form-input" type="text" name="user-phone">
+              <svg class="modal-form-icon-input" height="24px">
+                <use href="./images/icons-forma.svg#icon-phone-black-18dp-1"></use>
+              </svg></span></label>
 
 
-          </ul>
+          <label class="modal-form-label">
+            <span class="modal-form-label-text">Email</span><span class="form-input-wrapper"><input
+                class="modal-form-input" type="text" name="user-email">
+              <svg class="modal-form-icon-input" height="24px">
+                <use href="./images/icons-forma.svg#icon-email-black-18dp-1"></use>
+              </svg></span></label>
+
+          <label class="modal-form-label">
+            <span class="modal-form-label-text">Comment</span><textarea class="form-input-msg" name="user-msg"
+              placeholder="Text input"></textarea></label>
+
+
+          <div class="flex-checkbox">
+            <label class="checkbox-privacy">
+              <input class="checkbox-privacy visually-hidden" type="checkbox" name="policy-checkbox"><span
+                class="span-checkbox"></span> &nbsp;I accept the terms
+              and
+              conditions of the&nbsp;<a class="text-privacy" href="#"> Privacy Policy</a> </label>
+          </div>
+          <button class="form-button" type="submit">Send</button>
         </form>
       </div>
     </div>
 
   </div>
-  <script src="./js/modal.js"></script>
+  <script src=" ./js/modal.js">
+  </script>
 </body>
 
 </html>
