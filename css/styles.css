@@ -671,6 +671,10 @@ footer {
     padding: 100px 0;
 }
 
+.footer-flex {
+    display:flex;
+    gap: 120px;
+}
 .footer-social-header {
     color: var(--color-hero-button);
     text-align: left;
@@ -689,6 +693,65 @@ footer {
     display: flex;
     gap: 120px;
 }
+
+.footer-subscribe-email-button {
+
+    display: inline-flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-subscribe-email-form-input {
+    background: none;
+    width: 264px;
+    height: 40px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    outline: 0;
+    padding-left: 16px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+}
+
+.subscribe-items {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-submit-button {
+    background-color: var(--color-hero-button-bg);
+    color: var(--color-hero-button);
+    border-radius: 4px;
+    border: none;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.subscribe-submit-button:hover,
+.subscribe-submit-button:focus {
+    background-color: var(--color-hero-hover);
+}
+
+.subscribe-icon {
+    fill: var(--color-hero-button);
+}
+
+
 
 /* .footer-logo {
     margin-bottom: 16px;
@@ -741,6 +804,8 @@ footer {
     background-color: var(--color-hero-button);
    
         border-radius: 4px;
+
+        padding: 72px 24px;
     
 }
 
@@ -789,11 +854,7 @@ footer {
     
 }
 
-.modal-window-container {
-    padding: 74px 24px;
-   
 
-}
 
 .modal-window-header {
     font-family: 'Roboto', sans-serif;
@@ -826,6 +887,8 @@ footer {
         font-size: 12px;
         line-height: 1.33;
             letter-spacing: 0.04em;
+            margin-bottom: 4px;
+            
 
 }
 
@@ -850,6 +913,7 @@ footer {
 .form-input-wrapper {
     display: block;
     position: relative;
+    
 }
 
 
@@ -887,7 +951,7 @@ border-color: var(--color-hero-button-bg);
         border-width: 1px;
         border-style: solid;
         border-color: rgba(33, 33, 33, 0.2);
-        
+        display: block;
         border-radius: 4px;
         padding: 8px 16px;
         transform: border-color;
@@ -905,8 +969,7 @@ border-color: var(--color-hero-button-bg);
 }
 
 .checkbox-privacy {
-    margin: 4px;
-        margin-left: 0;
+    
         font-size: 12px;
         line-height: 1.33;
     letter-spacing: 0.04em;
@@ -950,8 +1013,10 @@ border-color: var(--color-hero-button-bg);
 }
 
 .form-button {
-margin: 18px auto;
+
     display: block;
+    margin: 16px auto;
+    
     height: 56px;
     width: 169px;
     font-family: 'Roboto', sans-serif;
@@ -979,55 +1044,5 @@ margin: 18px auto;
 }
 
 
-.footer-subscribe-email-button {
 
-    display: inline-flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-subscribe-email-form-input {
-    background: none;
-        width: 264px;
-            height: 40px;
-           
-            border-radius: 4px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            
-            outline: 0;
-            padding-left: 16px;
-            padding-right: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            font-size: 12px;
-}
-
-.subscribe-submit-button {
-    background-color: var(--color-hero-button-bg);
-        color: var(--color-hero-button);
-        border-radius: 4px;
-        border: none;
-        align-items: center;
-        padding: 8px 24px;
-        gap: 16px;
-border: 1px solid transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        display: inline-flex;
-        cursor: pointer;
-}
-
-.subscribe-submit-button:hover, 
-.subscribe-submit-button:focus {
-    background-color: var(--color-hero-hover);
-}
-
-.subscribe-icon {
-    fill: var(--color-hero-button);
-}
 
