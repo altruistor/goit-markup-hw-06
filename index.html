@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Студія</title>
@@ -121,40 +121,40 @@
       <div class="container">
         <h2 class="section-title">Our Team</h2>
         <ul class="team-cards-list">
-          <div class="team-card">
-            <li class="section-card-box">
-              <div class="team-card-img">
-                <img src="./images/beardman.jpg" width="264" alt="Mark" />
-              </div>
-              <div class="team-card-text">
-                <h3 class="section-card-title">Mark Guerrero</h3>
-                <p class="our-team-text">Product Designer</p>
 
-                <ul class="social-icons-list">
-                  <li class="social-icons-item">
-                    <a class="social-icons-link" href="#"><svg class="social-icons">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg></a>
-                  </li>
-                  <li class="social-icons-item">
-                    <a class="social-icons-link" href="#"><svg class="social-icons">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg></a>
-                  </li>
-                  <li class="social-icons-item">
-                    <a class="social-icons-link" href="#"><svg class="social-icons">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg></a>
-                  </li>
-                  <li class="social-icons-item">
-                    <a class="social-icons-link" href="#"><svg class="social-icons">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg></a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </div>
+          <li class="section-card-box">
+            <div class="team-card-img">
+              <img src="./images/beardman.jpg" width="264" alt="Mark" />
+            </div>
+            <div class="team-card-text">
+              <h3 class="section-card-title">Mark Guerrero</h3>
+              <p class="our-team-text">Product Designer</p>
+
+              <ul class="social-icons-list">
+                <li class="social-icons-item">
+                  <a class="social-icons-link" href="#"><svg class="social-icons">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg></a>
+                </li>
+                <li class="social-icons-item">
+                  <a class="social-icons-link" href="#"><svg class="social-icons">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg></a>
+                </li>
+                <li class="social-icons-item">
+                  <a class="social-icons-link" href="#"><svg class="social-icons">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg></a>
+                </li>
+                <li class="social-icons-item">
+                  <a class="social-icons-link" href="#"><svg class="social-icons">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
 
           <li class="section-card-box">
             <img src="./images/tomford.jpg" width="264" alt="Tom Ford" />
@@ -343,18 +343,21 @@
         <div class="footer-subscribe">
           <p class="footer-social-header">Subscribe</p>
 
-          <div class="subscribe-items">
-            <form class="footer-subscribe-email-form" type="" autocomplete="on" novalidate><input
-                class="footer-subscribe-email-form-input" type="text" name="user-email-subscribe" placeholder="E-mail">
-            </form>
-            <button class="subscribe-submit-button" type="submit">Subscribe <svg class="subscribe-icon" height="24px"
-                width="24px">
-                <use href="./images/icons-forma.svg#icon-letter-subscribe"></use>
-              </svg></button>
-          </div>
+
+          <form class="footer-subscribe-email-form" autocomplete="on" novalidate>
+            <div class="subscribe-items"><input class="footer-subscribe-email-form-input" type="text"
+                name="user-email-subscribe" placeholder="E-mail">
+              <button class="subscribe-submit-button" type="submit">Subscribe <svg class="subscribe-icon" height="24px"
+                  width="24px">
+                  <use href="./images/icons-forma.svg#icon-letter-subscribe"></use>
+                </svg></button>
+            </div>
+          </form>
+
         </div>
       </div>
     </div>
+
   </footer>
 
   <div class="backdrop is-hidden" data-modal>
@@ -363,47 +366,47 @@
           <use href="./images/icons.svg#icon-close-button"></use>
         </svg></button>
 
-      <div class="modal-window-container">
-        <p class="modal-window-header">Leave your contacts and we will call you back</p>
-        <form class="contact-form" autocomplete="on" novalidate>
 
-          <label class="modal-form-label">
-            <span class="modal-form-label-text"> Name</span><span class="form-input-wrapper"><input
-                class="modal-form-input" type="text" name="user-name" pattern="[a-zA-Zа-яА-ЯіІїЇ]+" required>
-              <svg class="modal-form-icon-input" width="18px" height="18px">
-                <use href="./images/icons-forma.svg#icon-person-black-18dp-1"></use>
-              </svg></span></label>
+      <p class="modal-window-header">Leave your contacts and we will call you back</p>
+      <form class="contact-form" autocomplete="on" novalidate>
 
-          <label class="modal-form-label">
-            <span class="modal-form-label-text">Phone</span><span class="form-input-wrapper"><input
-                class="modal-form-input" type="text" name="user-phone">
-              <svg class="modal-form-icon-input" height="24px">
-                <use href="./images/icons-forma.svg#icon-phone-black-18dp-1"></use>
-              </svg></span></label>
+        <label class="modal-form-label">
+          <span class="modal-form-label-text"> Name</span><span class="form-input-wrapper"><input
+              class="modal-form-input" type="text" name="user-name" pattern="[a-zA-Zа-яА-ЯіІїЇ]+" required>
+            <svg class="modal-form-icon-input" width="18px" height="18px">
+              <use href="./images/icons-forma.svg#icon-person-black-18dp-1"></use>
+            </svg></span></label>
 
-
-          <label class="modal-form-label">
-            <span class="modal-form-label-text">Email</span><span class="form-input-wrapper"><input
-                class="modal-form-input" type="text" name="user-email">
-              <svg class="modal-form-icon-input" height="24px">
-                <use href="./images/icons-forma.svg#icon-email-black-18dp-1"></use>
-              </svg></span></label>
-
-          <label class="modal-form-label">
-            <span class="modal-form-label-text">Comment</span><textarea class="form-input-msg" name="user-msg"
-              placeholder="Text input"></textarea></label>
+        <label class="modal-form-label">
+          <span class="modal-form-label-text">Phone</span><span class="form-input-wrapper"><input
+              class="modal-form-input" type="text" name="user-phone">
+            <svg class="modal-form-icon-input" height="24px">
+              <use href="./images/icons-forma.svg#icon-phone-black-18dp-1"></use>
+            </svg></span></label>
 
 
-          <div class="flex-checkbox">
-            <label class="checkbox-privacy">
-              <input class="checkbox-privacy visually-hidden" type="checkbox" name="policy-checkbox"><span
-                class="span-checkbox"></span> &nbsp;I accept the terms
-              and
-              conditions of the&nbsp;<a class="text-privacy" href="#"> Privacy Policy</a> </label>
-          </div>
-          <button class="form-button" type="submit">Send</button>
-        </form>
-      </div>
+        <label class="modal-form-label">
+          <span class="modal-form-label-text">Email</span><span class="form-input-wrapper"><input
+              class="modal-form-input" type="text" name="user-email">
+            <svg class="modal-form-icon-input" height="24px">
+              <use href="./images/icons-forma.svg#icon-email-black-18dp-1"></use>
+            </svg></span></label>
+
+        <label class="modal-form-label">
+          <span class="modal-form-label-text">Comment</span><textarea class="form-input-msg" name="user-msg"
+            placeholder="Text input"></textarea></label>
+
+
+        <div class="flex-checkbox">
+          <label class="checkbox-privacy">
+            <input class="checkbox-privacy visually-hidden" type="checkbox" name="policy-checkbox"><span
+              class="span-checkbox"></span> &nbsp;I accept the terms
+            and
+            conditions of the&nbsp;<a class="text-privacy" href="#"> Privacy Policy</a> </label>
+        </div>
+        <button class="form-button" type="submit">Send</button>
+      </form>
+
     </div>
 
   </div>
